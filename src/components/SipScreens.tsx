@@ -53,7 +53,7 @@ export function SipHomeScreen({
 
   return (
     <div
-      className="w-full h-full min-h-[760px] bg-[#EAF5FE] flex flex-col justify-between select-none overflow-hidden font-sip"
+      className="w-full h-full min-h-[100dvh] sm:min-h-[760px] bg-[#EAF5FE] flex flex-col justify-between select-none overflow-clip font-sip"
       data-testid="sip-home-screen"
     >
       <div>
@@ -300,7 +300,7 @@ export function SipHomeScreen({
       </div>
 
       {/* Dark Bottom Navigation Bar with Protruding Center QR Button */}
-      <div className="bg-[#0F1B2C] text-white px-2 pt-1.5 pb-2 mt-2 relative">
+      <div className="sticky bottom-0 z-20 bg-[#0F1B2C] text-white px-2 pt-1.5 pb-[max(0.5rem,env(safe-area-inset-bottom))] mt-2">
         <div className="grid grid-cols-5 items-end">
           <button
             type="button"
@@ -367,7 +367,7 @@ interface SipConfirmationProps {
 export function SipConfirmationScreen({ receipt, onBack }: SipConfirmationProps) {
   return (
     <div
-      className="w-full min-h-screen sm:min-h-[760px] bg-white flex flex-col items-center pt-10 pb-8 px-5 select-none overflow-hidden font-sip"
+      className="w-full min-h-[100dvh] sm:min-h-[760px] bg-white flex flex-col items-center pt-10 pb-8 px-5 select-none overflow-hidden font-sip"
       data-testid="sip-confirmation-screen"
     >
       {/* Green Circle with White Checkmark */}

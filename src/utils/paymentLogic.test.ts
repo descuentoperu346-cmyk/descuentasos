@@ -4,6 +4,7 @@ import {
   formatAmountNumber,
   generatePrefixedCode,
   formatPhoneForReceipt,
+  formatDateForApp,
   validatePaymentInput,
   createReceiptFromFlow,
 } from './paymentLogic';
@@ -24,6 +25,26 @@ test('formatPhoneForReceipt formats according to each app visual reference', () 
   assert.equal(formatPhoneForReceipt('900000001', 'bcp'), '*** **');
   assert.equal(formatPhoneForReceipt('900000003', 'sip'), '••• ••• 003');
   assert.equal(formatPhoneForReceipt('900000002', 'interbank'), '900 000 002');
+});
+
+test('formatDateForApp formats the given date and time for each app', () => {
+  const afternoon = new Date(2026, 9, 25, 15, 7);
+  assert.equal(formatDateForApp('bcp', afternoon), 'Domingo 25 Octubre 2026 - 3:07 pm.');
+  assert.equal(formatDateForApp('interbank', afternoon), '25 Oct 2026   3:07 PM');
+  assert.equal(formatDateForApp('sip', afternoon), '25 octubre 2026 - 3:07 pm');
+
+  const midnight = new Date(2026, 9, 26, 0, 5);
+  assert.equal(formatDateForApp('bcp', midnight), 'Lunes 26 Octubre 2026 - 12:05 am.');
+});
+
+test('formatDateForApp uses the current time when no date is given', () => {
+  const before = Date.now();
+  const text = formatDateForApp('bcp');
+  const after = Date.now();
+  const candidates = [new Date(before), new Date(after)].map((d) => formatDateForApp('bcp', d));
+  assert.ok(candidates.includes(text));
+  assert.notEqual(text, 'Domingo 25 Octubre 2026 - 12:00 pm.');
+  assert.ok(after >= before);
 });
 
 test('validatePaymentInput validates required fields and bounds', () => {

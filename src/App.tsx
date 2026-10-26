@@ -178,8 +178,8 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen w-full bg-white flex flex-col items-center justify-start overflow-x-hidden">
-      <div className="w-full max-w-[420px] bg-white">
+    <main className="min-h-[100dvh] w-full bg-white sm:bg-[#E5E9EF] flex flex-col items-center sm:justify-center sm:py-6 overflow-x-hidden">
+      <div className="w-full max-w-[420px] flex-1 sm:flex-none bg-white sm:rounded-[28px] sm:shadow-[0_24px_60px_rgba(15,23,42,0.25)] overflow-clip">
         {renderDeviceScreen(activeApp)}
       </div>
     </main>

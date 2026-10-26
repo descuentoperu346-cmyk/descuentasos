@@ -87,7 +87,7 @@ export function formatPhoneForReceipt(phoneNumber: string, app: BankAppId): stri
   return `${padded.slice(0, 3)} ${padded.slice(3, 6)} ${padded.slice(6, 9)}`;
 }
 
-export function formatDateForApp(app: BankAppId, date = new Date(2026, 9, 25, 12, 0)): string {
+export function formatDateForApp(app: BankAppId, date = new Date()): string {
   const monthsFull = [
     'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
     'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre',
@@ -195,7 +195,7 @@ export const INITIAL_BANK_STATE: AppBankState = {
       sourceAccount: 'Cuenta Yape Soles',
       sourceAccountMasked: '**** 6026',
       commission: 'Gratis',
-      dateFormatted: 'Domingo 25 Octubre 2026 - 12:00 pm.',
+      dateFormatted: formatDateForApp('bcp'),
       operationCode: '04740517',
     },
   },
@@ -215,7 +215,7 @@ export const INITIAL_BANK_STATE: AppBankState = {
       sourceAccount: 'Cuenta Simple Soles',
       sourceAccountMasked: '**** 1579',
       commission: 'GRATIS',
-      dateFormatted: '18 Oct 2026   11:43 PM',
+      dateFormatted: formatDateForApp('interbank'),
       operationCode: '00607032',
     },
   },
@@ -235,7 +235,7 @@ export const INITIAL_BANK_STATE: AppBankState = {
       sourceAccount: 'Tarjeta de Débito (Oh!pay)',
       sourceAccountMasked: '**** 4753',
       commission: 'GRATIS',
-      dateFormatted: '9 octubre 2026 - 12:46 am',
+      dateFormatted: formatDateForApp('sip'),
       operationCode: '389317388',
     },
   },

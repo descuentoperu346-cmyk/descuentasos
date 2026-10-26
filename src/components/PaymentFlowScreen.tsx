@@ -201,7 +201,7 @@ export function PaymentFlowScreen({
 
     return (
       <div
-        className="w-full min-h-screen bg-white flex flex-col justify-between relative select-none font-sip text-[#0F172A] overflow-hidden"
+        className="w-full min-h-[100dvh] sm:min-h-[760px] bg-white flex flex-col justify-between relative select-none font-sip text-[#0F172A] overflow-hidden"
         data-testid={
           step === 'contacts' ? 'sip-contacts-screen' : 'sip-amount-screen'
         }
@@ -527,7 +527,7 @@ export function PaymentFlowScreen({
   if (step === 'contacts') {
     return (
       <div
-        className={`w-full min-h-screen bg-white flex flex-col justify-between select-none ${fontClass} text-[#131B2E]`}
+        className={`w-full min-h-[100dvh] sm:min-h-[760px] bg-white flex flex-col justify-between select-none ${fontClass} text-[#131B2E]`}
         data-testid="bcp-contacts-screen"
       >
         <div>
@@ -636,7 +636,7 @@ export function PaymentFlowScreen({
   // STEP 2 & 3: Amount, Destination & Bottom Sheet (image_6222d7e3.png & image_3b45118a.png)
   return (
     <div
-      className={`w-full min-h-screen bg-white flex flex-col justify-between relative select-none ${fontClass} text-[#131B2E] overflow-hidden`}
+      className={`w-full min-h-[100dvh] sm:min-h-[760px] bg-white flex flex-col justify-between relative select-none ${fontClass} text-[#131B2E] overflow-hidden`}
       data-testid="bcp-amount-screen"
     >
       <div>

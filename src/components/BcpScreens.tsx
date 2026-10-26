@@ -126,7 +126,7 @@ export function BcpHomeScreen({
 
   return (
     <div
-      className="w-full h-full min-h-[760px] bg-[#F7F8FA] flex flex-col justify-between select-none overflow-hidden font-bcp"
+      className="w-full h-full min-h-[100dvh] sm:min-h-[760px] bg-[#F7F8FA] flex flex-col justify-between select-none overflow-clip font-bcp"
       data-testid="bcp-home-screen"
     >
       <div>
@@ -333,8 +333,8 @@ export function BcpHomeScreen({
       </div>
 
       {/* Bottom navigation */}
-      <div>
-        <div className="bg-white border-t border-[#E3E6EE] pt-2 pb-2 px-2">
+      <div className="sticky bottom-0 z-20">
+        <div className="bg-white border-t border-[#E3E6EE] pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] px-2">
           <div className="grid grid-cols-4 items-center">
             <button
               type="button"
@@ -389,7 +389,7 @@ interface BcpConfirmationProps {
 export function BcpConfirmationScreen({ receipt, onBack }: BcpConfirmationProps) {
   return (
     <div
-      className="w-full min-h-screen sm:min-h-[760px] bg-white flex flex-col justify-between relative select-none overflow-hidden font-bcp"
+      className="w-full min-h-[100dvh] sm:min-h-[760px] bg-white flex flex-col justify-between relative select-none overflow-hidden font-bcp"
       data-testid="bcp-confirmation-screen"
     >
       <div className="px-6 pt-10 pb-8">

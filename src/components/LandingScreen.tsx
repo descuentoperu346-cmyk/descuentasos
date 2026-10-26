@@ -14,12 +14,12 @@ const BANK_OPTIONS: { id: BankAppId; label: string; icon: string }[] = [
 
 export function LandingScreen({ onSelectApp }: LandingScreenProps) {
   return (
-    <main className="min-h-screen w-full bg-[#030B08] flex flex-col items-center justify-center px-5 py-8">
+    <main className="min-h-[100dvh] w-full bg-[#030B08] flex flex-col items-center justify-center px-5 py-6 sm:py-8">
       <div className="w-full max-w-[420px] flex flex-col items-center">
         <img
           src="/assets/logo-descuentos-peru.png"
           alt="Descuentos Perú"
-          className="w-[250px] h-[250px] object-contain drop-shadow-[0_0_28px_rgba(16,255,140,0.35)]"
+          className="w-[clamp(120px,min(52vw,32dvh),250px)] aspect-square object-contain drop-shadow-[0_0_28px_rgba(16,255,140,0.35)]"
         />
 
         <h1 className="mt-5 text-white text-[20px] font-bold tracking-tight">

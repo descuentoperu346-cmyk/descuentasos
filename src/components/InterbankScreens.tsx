@@ -51,7 +51,7 @@ export function InterbankHomeScreen({
 }: InterbankHomeProps) {
   return (
     <div
-      className="w-full h-full min-h-[760px] bg-[#05BE50] flex flex-col justify-between select-none overflow-hidden font-interbank"
+      className="w-full h-full min-h-[100dvh] sm:min-h-[760px] bg-[#05BE50] flex flex-col justify-between select-none overflow-clip font-interbank"
       data-testid="interbank-home-screen"
     >
       {/* Top Green Header */}
@@ -91,7 +91,7 @@ export function InterbankHomeScreen({
       </div>
 
       {/* Main White Rounded Sheet */}
-      <div className="flex-1 bg-white rounded-t-[28px] flex flex-col justify-between overflow-hidden">
+      <div className="flex-1 bg-white rounded-t-[28px] flex flex-col justify-between overflow-clip">
         <div className="px-4 pt-1 pb-2 overflow-y-auto">
           {/* Two Top Tabs: Mis operaciones | Mis productos */}
           <div className="grid grid-cols-2 border-b border-[#E2E8F0]">
@@ -505,7 +505,7 @@ export function InterbankHomeScreen({
         </div>
 
         {/* Bottom Navigation Bar with Center Blue QR Circle */}
-        <div className="bg-white rounded-t-[20px] shadow-[0_-4px_14px_rgba(0,0,0,0.06)] border-t border-[#F1F5F9] px-2 pt-1.5 pb-2">
+        <div className="sticky bottom-0 z-20 bg-white rounded-t-[20px] shadow-[0_-4px_14px_rgba(0,0,0,0.06)] border-t border-[#F1F5F9] px-2 pt-1.5 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
           <div className="grid grid-cols-5 items-end">
             <button
               type="button"
@@ -571,7 +571,7 @@ export function InterbankConfirmationScreen({
 }: InterbankConfirmationProps) {
   return (
     <div
-      className="w-full min-h-screen sm:min-h-[760px] bg-white flex flex-col items-center pt-12 pb-8 px-5 select-none overflow-hidden font-interbank"
+      className="w-full min-h-[100dvh] sm:min-h-[760px] bg-white flex flex-col items-center pt-12 pb-8 px-5 select-none overflow-hidden font-interbank"
       data-testid="interbank-confirmation-screen"
     >
       {/* Centered Interbank Logo */}

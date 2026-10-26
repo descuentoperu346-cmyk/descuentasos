@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Flexo';
+  src: url('/fonts/Flexo-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Flexo';
+  src: url('/fonts/Flexo-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Flexo';
+  src: url('/fonts/Flexo-Demi.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Flexo';
+  src: url('/fonts/Flexo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('/fonts/Geometria-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('/fonts/Geometria-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('/fonts/Geometria-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('/fonts/Geometria-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('/fonts/Geometria-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: 'Geometria', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F1F5F9;
+    color: #0F172A;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Official typography per banking app */
+.font-bcp {
+  font-family: 'Flexo', 'Signika', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-interbank {
+  font-family: 'Geometria', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-sip {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

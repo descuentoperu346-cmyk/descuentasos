@@ -1,0 +1,6 @@
+{
+  "name": "BCP, Interbank & Sip — Prototipo Estudiantil UI",
+  "description": "Prototipo estudiantil de fidelidad visual para flujos de inicio y confirmación de pago en BCP, Interbank y Sip.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -70,7 +70,7 @@ export function generatePrefixedCode(app: BankAppId, rawDigits?: string): string
         ? '00607032'
         : '389317388';
   const digits = cleanDigits.length >= 6 ? cleanDigits : fallback;
-  return `SIM-${digits}`;
+  return `${digits}`;
 }
 
 export function formatPhoneForReceipt(phoneNumber: string, app: BankAppId): string {
@@ -196,7 +196,7 @@ export const INITIAL_BANK_STATE: AppBankState = {
       sourceAccountMasked: '**** 6026',
       commission: 'Gratis',
       dateFormatted: 'Domingo 25 Octubre 2026 - 12:00 pm.',
-      operationCode: 'SIM-04740517',
+      operationCode: '04740517',
     },
   },
   interbank: {
@@ -216,7 +216,7 @@ export const INITIAL_BANK_STATE: AppBankState = {
       sourceAccountMasked: '**** 1579',
       commission: 'GRATIS',
       dateFormatted: '18 Oct 2026   11:43 PM',
-      operationCode: 'SIM-00607032',
+      operationCode: '00607032',
     },
   },
   sip: {
@@ -236,7 +236,7 @@ export const INITIAL_BANK_STATE: AppBankState = {
       sourceAccountMasked: '**** 4753',
       commission: 'GRATIS',
       dateFormatted: '9 octubre 2026 - 12:46 am',
-      operationCode: 'SIM-389317388',
+      operationCode: '389317388',
     },
   },
 };

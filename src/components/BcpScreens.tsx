@@ -203,7 +203,7 @@ export function BcpHomeScreen({
 
           {/* Tus productos header */}
           <div className="flex items-center justify-between mb-1">
-            <h2 className="text-[#2B3A67] font-semibold text-[16px]">Tus productos</h2>
+            <h2 className="text-[#2B3A67] font-bold text-[16px]">Tus productos</h2>
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -235,14 +235,14 @@ export function BcpHomeScreen({
                 <BcpAhorroEmblem />
               </div>
               <div>
-                <div className="text-[#2B3A67] font-medium text-[14.5px] leading-snug">
+                <div className="text-[#2B3A67] font-bold text-[15px] leading-snug">
                   Ahorro Soles
                 </div>
-                <div className="text-[#6B7390] text-[12.5px] mt-0.5">**** 6026</div>
+                <div className="text-[#6B7390] text-[13px] mt-0.5">**** 6026</div>
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[#2B3A67] font-medium text-[14.5px] tabular-nums">
+              <span className="text-[#2B3A67] font-bold text-[15px] tabular-nums">
                 {hideBalances ? 'S/ *****' : `S/ ${formatAmountNumber(savingsBalance)}`}
               </span>
               <ChevronRight className="w-4 h-4 text-[#8A91A8]" />
@@ -254,7 +254,7 @@ export function BcpHomeScreen({
             <button
               type="button"
               onClick={onToggleBalances}
-              className="text-[#F58634] font-medium text-[13.5px]"
+              className="text-[#F58634] font-bold text-[14px]"
             >
               Ver todos
             </button>
@@ -272,7 +272,7 @@ export function BcpHomeScreen({
                 <div className="w-[48px] h-[48px] rounded-full bg-[#F58634] text-white flex items-center justify-center group-hover:bg-[#E0761F] transition-colors">
                   {action.icon}
                 </div>
-                <span className="text-[#3C4A6B] text-[12px] leading-[1.25] text-center mt-2">
+                <span className="text-[#3C4A6B] text-[12px] font-medium leading-[1.2] text-center mt-2">
                   {action.lines[0]}
                   <br />
                   {action.lines[1]}
@@ -283,7 +283,7 @@ export function BcpHomeScreen({
 
           {/* Lo más destacado */}
           <div className="mt-1">
-            <h3 className="text-[#2B3A67] font-semibold text-[16px] mb-3">Lo más destacado</h3>
+            <h3 className="text-[#2B3A67] font-bold text-[16px] mb-3">Lo más destacado</h3>
             <div
               onScroll={handleHighlightsScroll}
               className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-pl-5 no-scrollbar -mx-5 px-5 pb-1"
@@ -344,7 +344,7 @@ export function BcpHomeScreen({
             >
               <span className="flex flex-col items-center px-5 py-1.5 rounded-2xl bg-[#DCE5F7] text-[#1F449E]">
                 <Home className="w-5 h-5 fill-[#1F449E]" />
-                <span className="text-[11px] font-semibold mt-0.5">Inicio</span>
+                <span className="text-[10.5px] font-bold mt-1">Inicio</span>
               </span>
             </button>
 
@@ -354,7 +354,7 @@ export function BcpHomeScreen({
               className="flex flex-col items-center justify-center py-1.5 text-[#6B7390]"
             >
               <ArrowLeftRight className="w-5 h-5 stroke-[1.8]" />
-              <span className="text-[11px] mt-0.5">Operaciones</span>
+              <span className="text-[10.5px] font-medium mt-1">Operaciones</span>
             </button>
 
             <button
@@ -363,7 +363,7 @@ export function BcpHomeScreen({
               className="flex flex-col items-center justify-center py-1.5 text-[#6B7390]"
             >
               <ShoppingCart className="w-5 h-5 stroke-[1.8]" />
-              <span className="text-[11px] mt-0.5">Paga</span>
+              <span className="text-[10.5px] font-medium mt-1">Paga</span>
             </button>
 
             <button
@@ -372,7 +372,7 @@ export function BcpHomeScreen({
               className="flex flex-col items-center justify-center py-1.5 text-[#6B7390]"
             >
               <Settings className="w-5 h-5 stroke-[1.8]" />
-              <span className="text-[11px] mt-0.5">Configuración</span>
+              <span className="text-[10.5px] font-medium mt-1">Configuración</span>
             </button>
           </div>
         </div>

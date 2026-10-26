@@ -273,13 +273,13 @@ export function InterbankHomeScreen({
                 <div className="flex items-center gap-3.5">
                   <img src="/assets/iconos/ui/ibk-cuenta-soles.png" alt="" className="w-10 h-10 object-contain shrink-0" />
                   <div>
-                    <div className="text-[#1F2937] text-[15px] font-normal">
+                    <div className="text-[#1F2937] text-[14px] font-normal">
                       Cuenta Simple Soles
                     </div>
-                    <div className="text-[#111827] font-bold text-[18px] leading-snug tabular-nums">
+                    <div className="text-[#111827] font-bold text-[16.5px] leading-snug tabular-nums">
                       {hideBalances ? 'S/ ••••' : `S/${formatAmountNumber(solesBalance)}`}
                     </div>
-                    <div className="text-[#4B5563] text-[12px]">Saldo disponible</div>
+                    <div className="text-[#4B5563] text-[11.5px]">Saldo disponible</div>
                   </div>
                 </div>
                 <img src="/assets/iconos/ui/ibk-chevron.png" alt="" className="w-5 h-5 object-contain" />
@@ -294,13 +294,13 @@ export function InterbankHomeScreen({
                 <div className="flex items-center gap-3.5">
                   <img src="/assets/iconos/ui/ibk-cuenta-dolares.png" alt="" className="w-10 h-10 object-contain shrink-0" />
                   <div>
-                    <div className="text-[#1F2937] text-[15px] font-normal">
+                    <div className="text-[#1F2937] text-[14px] font-normal">
                       Cuenta Simple Dólares
                     </div>
-                    <div className="text-[#111827] font-bold text-[18px] leading-snug tabular-nums">
+                    <div className="text-[#111827] font-bold text-[16.5px] leading-snug tabular-nums">
                       {hideBalances ? '$ ••••' : `$${formatAmountNumber(dollarsBalance)}`}
                     </div>
-                    <div className="text-[#4B5563] text-[12px]">Saldo disponible</div>
+                    <div className="text-[#4B5563] text-[11.5px]">Saldo disponible</div>
                   </div>
                 </div>
                 <img src="/assets/iconos/ui/ibk-chevron.png" alt="" className="w-5 h-5 object-contain" />
@@ -314,7 +314,7 @@ export function InterbankHomeScreen({
               >
                 <div className="flex items-center gap-3.5">
                   <img src="/assets/iconos/ui/ibk-visa.png" alt="" className="w-10 h-10 object-contain shrink-0" />
-                  <div className="text-[#111827] font-semibold text-[17px]">
+                  <div className="text-[#111827] font-semibold text-[15px]">
                     Débito Clásica
                   </div>
                 </div>
@@ -330,10 +330,10 @@ export function InterbankHomeScreen({
                 <div className="flex items-center gap-3.5">
                   <img src="/assets/iconos/ui/ibk-inversiones.png" alt="" className="w-10 h-10 object-contain shrink-0" />
                   <div>
-                    <div className="text-[#111827] font-semibold text-[17px]">
+                    <div className="text-[#111827] font-semibold text-[15px]">
                       Mis Inversiones
                     </div>
-                    <div className="text-[#4B5563] text-[13px]">Explorar productos</div>
+                    <div className="text-[#4B5563] text-[12px]">Explorar productos</div>
                   </div>
                 </div>
                 <img src="/assets/iconos/ui/ibk-chevron.png" alt="" className="w-5 h-5 object-contain" />
@@ -347,10 +347,10 @@ export function InterbankHomeScreen({
               >
                 <img src="/assets/iconos/ui/ibk-mas.png" alt="" className="w-5 h-5 object-contain shrink-0" />
                 <div>
-                  <div className="text-[#111827] font-semibold text-[16px]">
+                  <div className="text-[#111827] font-semibold text-[14px]">
                     Agregar nuevo producto
                   </div>
-                  <div className="text-[#4B5563] text-[13px]">
+                  <div className="text-[#4B5563] text-[12px]">
                     Obtén una cuenta, tarjeta y más.
                   </div>
                 </div>

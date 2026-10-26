@@ -589,7 +589,7 @@ export function InterbankConfirmationScreen({
       {/* Centered Plin Speech Bubble Logo */}
       <div className="mb-2">
         <img
-          src="/assets/logo-descuentos-peru.png"
+          src="/assets/logo-descuentos-peru2.png"
           alt="Descuentos Perú"
           className="w-[56px] h-[56px] object-contain"
         />
